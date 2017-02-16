@@ -12,7 +12,7 @@
 
     <title>都 2015 年了，CSS 怎么还是这么糟糕 - Friday的博客 | Friday Blog</title>
 
-    <link rel="canonical" href="http://zwFriday.com/2015/12/28/css-sucks-2015/">
+    <link rel="canonical" href="http://localhost:4000/2015/12/28/css-sucks-2015/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -203,7 +203,7 @@
   <p>下滑这里查看更多内容</p>
 </blockquote>
 
-<h3 id="watch-slides-httphuangxuanmecss-sucks-2015"><a href="http://huangxuan.me/css-sucks-2015">Watch Slides →</a></h3>
+<h3 id="watch-slides-"><a href="http://huangxuan.me/css-sucks-2015">Watch Slides →</a></h3>
 
 <p><img src="http://huangxuan.me/css-sucks-2015/attach/qrcode.png" width="350" height="350" /></p>
 
@@ -255,9 +255,9 @@
 
 <h2 id="pocss-page-override-components-css">POCss: Page Override Components CSS</h2>
 
-<h3 id="scoping-components-brsmall-styleline-height2emcss-blocks-should-only-be-used-inside-a-component-of-the-same-namesmall">1. Scoping Components <br /><small style="line-height:2em;"><em>CSS Blocks should only be used inside a component of the same name.</em></small></h3>
+<h3 id="1-scoping-components-css-blocks-should-only-be-used-inside-a-component-of-the-same-name">1. Scoping Components <br /><small style="line-height:2em;"><em>CSS Blocks should only be used inside a component of the same name.</em></small></h3>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">// Component/index.scss
+<div class="language-scss highlighter-rouge"><pre class="highlight"><code><span class="c1">// Component/index.scss
 </span><span class="nc">.ComponentName</span> <span class="p">{</span>
     <span class="k">&amp;</span><span class="nt">--mofierName</span> <span class="p">{}</span>
     <span class="k">&amp;</span><span class="nt">__decendentName</span> <span class="p">{</span>
@@ -268,16 +268,16 @@
 </code></pre>
 </div>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">// Component/index.js</span>
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="c1">// Component/index.js</span>
 <span class="nx">require</span><span class="p">(</span><span class="s1">'./index.scss'</span><span class="p">);</span>
 </code></pre>
 </div>
 
 <p>CSS is <em>always bundled</em> with components<br />(from loading, mount to unmount)</p>
 
-<h3 id="components-can-be-overrode-by-pages-brsmall-styleline-height2emthere-is-always-requirements-to-rewrite-styles-of-components-in-pagessmall">2. Components can be Overrode by Pages <br /><small style="line-height:2em;"><em>There is always requirements to rewrite styles of components in pages</em></small></h3>
+<h3 id="2-components-can-be-overrode-by-pages-there-is-always-requirements-to-rewrite-styles-of-components-in-pages">2. Components can be Overrode by Pages <br /><small style="line-height:2em;"><em>There is always requirements to rewrite styles of components in pages</em></small></h3>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">// Pages/PageA.scss
+<div class="language-scss highlighter-rouge"><pre class="highlight"><code><span class="c1">// Pages/PageA.scss
 </span><span class="nn">#PageA</span> <span class="p">{</span>
     <span class="nc">.pagelet-name</span> <span class="p">{</span>
         <span class="nc">.pagelet-descendent-name</span> <span class="p">{}</span>
@@ -287,7 +287,7 @@
 </code></pre>
 </div>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">// Pages/index.js</span>
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="c1">// Pages/index.js</span>
 <span class="nx">require</span><span class="p">(</span><span class="s1">'./PageA.scss'</span><span class="p">);</span>
 </code></pre>
 </div>
@@ -336,7 +336,7 @@
                 <div class="ds-share"
                     style="text-align: right"
                     data-thread-key="/2015/12/28/css-sucks-2015" data-title="都 2015 年了，CSS 怎么还是这么糟糕"
-                    data-images="http://zwFriday.com/img/home-bg.jpg"
+                    data-images="http://localhost:4000/img/home-bg.jpg"
                     data-content="
   下滑这里查看更多内容
 
@@ -348,7 +348,7 @@ Watch Slides →
 你也可以通过扫描二维码在手机上观看
 
 这个 Web Slides 开源在我的 Gith... | Hux Blog，@Hux黄玄 的个人博客"
-                    data-url="http://zwFriday.com/2015/12/28/css-sucks-2015/">
+                    data-url="http://localhost:4000/2015/12/28/css-sucks-2015/">
                     <div class="ds-share-inline">
                       <ul  class="ds-share-icons-16">
                         <li data-toggle="ds-share-icons-more"><a class="ds-more" href="#">分享到：</a></li>
@@ -391,7 +391,7 @@ Watch Slides →
                     <div class="ds-thread"
                         data-thread-key="/2015/12/28/css-sucks-2015"
                         data-title="都 2015 年了，CSS 怎么还是这么糟糕"
-                        data-url="http://zwFriday.com/2015/12/28/css-sucks-2015/" >
+                        data-url="http://localhost:4000/2015/12/28/css-sucks-2015/" >
                     </div>
                 </div>
                 <!-- 多说评论框 end -->
@@ -684,7 +684,7 @@ Watch Slides →
                     
                 </ul>
                 <p class="copyright text-muted">
-                    Copyright &copy; Friday Blog 2016
+                    Copyright &copy; Friday Blog 2017
                     <br>
                     Theme © <a href="http://huangxuan.me">Hux</a> |
                     <iframe
